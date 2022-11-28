@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Анатолий Алексеев](https://up.htmlacademy.ru/adaptive/27/user/2174169).
-* Наставник: `Неизвестно`.
+* Наставник: [Лесухин Александр](https://htmlacademy.ru/profile/caneklis).
 
 ---
 
