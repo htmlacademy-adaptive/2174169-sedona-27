@@ -1,0 +1,19 @@
+.main-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "ptsans", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.main-header__logo {
+  position: absolute;
+  width: 185px;
+
+}
