@@ -1,0 +1,56 @@
+.photo-block {
+  position: relative;
+  display: grid;
+  grid-template-rows: 158px max-content;
+  width: 100%;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #e6e6e6;
+  background-position-y: -45px;
+  z-index: -1;
+  margin: 0 auto;
+}
+
+.photo-block__wrapper {
+  background-image: url("#");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  display: grid;
+  grid-template-rows: 158px max-content;
+  margin: 0;
+}
+
+.photo-block__image {
+  margin: 0 auto;
+  margin-top: 52px;
+  display: block;
+}
+
+.photo-block__text {
+  text-align: center;
+  margin: 0;
+  padding: 24px 10px 50px 10px;
+  margin-top: auto;
+  background-color: #ffffff;
+}
+
+.photo-block__title {
+  font-size: 18px;
+  margin-bottom: 23px;
+}
+
+.photo-block__feature {
+  font-family: 'PTSans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+}

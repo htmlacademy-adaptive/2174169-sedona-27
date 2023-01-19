@@ -1,0 +1,47 @@
+.catalog {
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__list-item {}
+
+.catalog__list-item-title {
+  text-transform: uppercase;
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
+}
+
+.catalog__list-item-feature {
+  margin: 0;
+  text-align: left;
+  padding-bottom: 0;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.catalog__list-item-image {
+  flex-grow: 1;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.catalog__list-item-text {
+  padding: 19px 0 44px 0;
+}
