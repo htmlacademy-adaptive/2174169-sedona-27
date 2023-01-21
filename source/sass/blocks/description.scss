@@ -100,29 +100,3 @@
 
 
 }
-
-.main-description {
-  text-transform: uppercase;
-  font-style: normal;
-}
-
-.main-description__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: section;
-}
-
-.main-description__title {
-  font-family: "ptsans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  padding: 0 0 11px 0;
-  margin: 0;
-  text-align: center;
-
-  @media (min-width:$tablet-width) {
-    padding: 0 0 11px 0;
-  }
-}
