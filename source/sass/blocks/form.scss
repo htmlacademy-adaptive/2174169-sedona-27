@@ -6,15 +6,38 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+  padding: 20px;
+
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+
+  }
+
+  @media (min-width:$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px;
+
+  }
 }
 
-.form_name {
+.form__name {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width:$tablet-width) {
+    font-size: 17px;
+    padding-right: 63px;
+    border-bottom: none;
+    border-right: 1px solid #e5e5e5;
+  }
+
 }
 
 .form__title {
@@ -22,6 +45,26 @@
   font-size: 18px;
   margin-bottom: 20px;
   margin-top: 24px;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    font-size: 21px;
+    margin-bottom: 28px;
+    margin-left: 48px;
+    margin-top: 0;
+
+  }
+
+  @media (min-width:$desktop-width) {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+    margin-left: 13px;
+    margin-top: 0;
+  }
 }
 
 .form__label {
@@ -31,6 +74,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 16px;
+
 }
 
 .form__label-text {
@@ -41,9 +85,8 @@
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
   font-size: 18px;
+  line-height: 26px;
   width: 100%;
   border: none;
   background-color: #f2f2f2;
@@ -58,8 +101,28 @@
   padding: 0;
   list-style: none;
   margin: 0 20px 0 20px;
-  margin-bottom: 16px;
   min-height: 46px;
+
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0;
+    margin: 0 11px 1px 30px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 28px;
+    margin: 17px 8px 30px 54px;
+  }
 }
 
 .form__radio {
@@ -72,7 +135,42 @@
   border: none;
   padding: 0;
   margin-bottom: 24px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width:$tablet-width) {
+    margin: 23px 0 14px 0;
+    grid-column: 1 / -1;
+  }
+
+}
+
+.form__emotions {
+
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
+
+    .form__title {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width:$desktop-width) {
+    display: grid;
+    grid-template-columns: 96px 1fr 1fr 96px;
+
+    .form__title {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.form__impressions {
+  @media (min-width:$tablet-width) {
+    margin: 23px 0 14px 0;
+    grid-column: 1 / -1;
+  }
 }
 
 .form__control {
@@ -84,6 +182,12 @@
   width: 100%;
   text-align: left;
   padding-left: 62px;
+
+
+  @media (min-width:$tablet-width) {
+    padding-left: 62px;
+  }
+
 }
 
 .form__textarea {
@@ -100,6 +204,24 @@
   resize: none;
   color: #000000;
   margin-bottom: 49px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 40px
+  }
+
+
+}
+
+
+.form__label-textarea {
+  @media (min-width:$tablet-width) {
+    grid-column: 1/ -1;
+  }
+
+  @media (min-width:$desktop-width) {
+
+    grid-column: 2 / 4;
+  }
 }
 
 .form__submit {
@@ -117,4 +239,41 @@
   width: 100%;
   padding: 16px 0 16px 0;
   margin-bottom: 3px;
+
+  @media (min-width:$desktop-width) {
+
+    grid-column: 2 / 3;
+  }
+}
+
+.form__subtext {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  text-align: right;
+
+  @media (min-width:$tablet-width) {
+    margin: 23px 0 16px 0;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin: 23px 0 14px 0;
+  }
+}
+
+.form__input-radio {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #000000;
+  content: "";
+  cursor: pointer;
+
+  @media (min-width:$tablet-width) {}
+
+  @media (min-width:$desktop-width) {}
 }
