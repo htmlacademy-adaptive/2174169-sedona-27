@@ -31,24 +31,24 @@
   text-transform: uppercase;
   margin: 0 auto;
 
+
+
+
+
+  @media (min-width:$tablet-width) {
+
+    text-align: center;
+    font-size: 21px;
+
+  }
+
+  @media (min-width:$desktop-width) {
+
+    margin-bottom: 24px;
+    margin-top: 28px;
+
+  }
 }
-
-
-
-@media (min-width:$tablet-width) {
-
-  text-align: center;
-  font-size: 21px;
-
-}
-
-@media (min-width:$desktop-width) {
-
-  margin-bottom: 24px;
-  margin-top: 28px;
-
-}
-
 
 .features__description {
   font-weight: 400;

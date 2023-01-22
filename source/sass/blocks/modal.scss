@@ -1,4 +1,4 @@
-.modal-container {
+.modal__container {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,4 +46,12 @@
   padding-bottom: 28px;
   margin: 0;
   text-transform: uppercase;
+}
+
+.modal {
+  display: block;
+
+  &--close {
+    display: none;
+  }
 }
