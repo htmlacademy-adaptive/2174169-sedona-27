@@ -30,6 +30,11 @@
   width: 180px;
   height: 58px;
 
+  @media (min-width: $tablet-width) {
+
+    width: 272px;
+    height: 58px;
+  }
 }
 
 .modal__title {
@@ -37,6 +42,14 @@
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+
+  }
 }
 
 .modal__feature {
@@ -49,7 +62,16 @@
 }
 
 .modal {
-  display: block;
+  display: none;
+  text-transform: uppercase;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 26px;
+  text-align: center;
+  position: relative;
+  margin: auto;
 
   &--close {
     display: none;

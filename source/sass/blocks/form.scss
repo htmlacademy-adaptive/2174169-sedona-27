@@ -96,6 +96,10 @@
   padding-right: 16px;
 }
 
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .form__list {
   margin: 0;
   padding: 0;
