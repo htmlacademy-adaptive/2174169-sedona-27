@@ -14,12 +14,20 @@
 
 
   @media (min-width:$tablet-width) {
+    font-weight: 700;
+    font-size: 14px;
     line-height: 21px;
+    width: 768px;
+    margin: 0 auto;
 
   }
 
   @media (min-width:$desktop-width) {
+    font-weight: 700;
+    font-size: 14px;
     line-height: 21px;
+    width: 1200px;
+    margin: 0 auto;
 
   }
 }

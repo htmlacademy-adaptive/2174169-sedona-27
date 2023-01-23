@@ -36,9 +36,7 @@
 }
 
 .main-footer__social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -112,4 +110,29 @@
   display: block;
   width: 48px;
   height: 48px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0);
+  }
+}
+
+.main-footer__social-item {
+  display: inline-block;
+}
+
+.main-footer__social-link--vk {
+  background-image: url("../img/vkontakte.png");
+}
+
+.main-footer__social-link--tg {
+  background-image: url("../img/telegram.png");
+}
+
+.main-footer__social-link--youtube {
+  background-image: url("../img/youtube.png");
 }

@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-1.png" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.png" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 
 </head>
 
@@ -13,7 +19,7 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="#" width="185" height="96" alt="Седона">
+        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
       </a>
       <nav class="main-nav main-nav--opened ">
         <button class="main-nav__toggle" type="button">
@@ -24,10 +30,10 @@
             <a class="main-nav__list-item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__list-item main-nav__list-item--active">
-            <a class="main-nav__list-item-link main-nav__list-item-link--active" href="#">Фото и видео</a>
+            <a class="main-nav__list-item-link main-nav__list-item-link--active" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__list-item">
-            <a class="main-nav__list-item-link" href="#">Форма отзыва</a>
+            <a class="main-nav__list-item-link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__list-item">
             <a class="main-nav__list-item-link" href="#">HTML Academy</a>
@@ -39,7 +45,11 @@
   <main class="page__main">
     <section class="description-catalog description-catalog--inner">
       <div class="description-catalog__wrapper">
-        <img class="description-catalog__image" src="#" width="229" height="39" alt="Логотип города">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-sedona-desktop-catalog.svg">
+          <source media="(min-width: 768px)" srcset="img/sedona-large.svg">
+          <img class="photo-block__image" src="img/mobile-sedona.svg" width="229" height="39" alt="Логотип города">
+        </picture>
       </div>
       <div class="description-catalog__container">
         <div class="description-catalog__container__text">
@@ -173,6 +183,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
   <div class="modal modal--close">
     <div class="modal__container">
       <div class="modal__block-open">
