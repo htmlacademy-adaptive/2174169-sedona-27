@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico">
@@ -17,13 +16,11 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
       </a>
-      <nav class="main-nav main-nav--opened  ">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="main-nav main-nav--opened  main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
             <a class="main-nav__list-item-link" href="index.html">Главная</a>
@@ -41,16 +38,20 @@
       </nav>
     </div>
   </header>
-  <main class="page__main">
+  <main class="main-catalog-container">
     <section class="photo-block photo-block--inner">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/text-sedona-desktop-catalog.svg">
-        <source media="(min-width: 768px)" srcset="img/sedona-large.svg">
-        <img class="photo-block__image" src="img/mobile-sedona.svg" width="229" height="39" alt="Логотип города">
-      </picture>
+      <div class="photo-block__wrapper">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-sedona-desktop-catalog.svg">
+          <source media="(min-width: 768px)" srcset="img/sedona-large.svg">
+          <img class="photo-block__image" src="img/mobile-sedona.svg" width="229" height="39" alt="Логотип города">
+        </picture>
+      </div>
       <div class="photo-block__text">
         <h1 class="photo-block__title">Фото и видео</h1>
-        <p class="photo-block__feature">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        <p class="photo-block__feature">Не можете решиться на путешествие<br class="photo-block__slogan-transfer">
+          из-за курса?<br class="photo-block__feature-endure"> Фотографии помогут вам<br
+            class="photo-block__slogan-transfer"> забыть о
           политике и экономике.</p>
       </div>
     </section>
@@ -67,7 +68,7 @@
             </picture>
           </a>
           <div class="catalog__list-item-text">
-            <h2 class="catalog__list-item-title">Неродные просторы</h2>
+            <h2 class="catalog__list-item-title">Народные просторы</h2>
             <p class="catalog__list-item-feature">Автор фото: Борис</p>
             <button class="catalog__list-item-button" type="button">1350</button>
           </div>
@@ -111,7 +112,7 @@
                 srcset="img/photo-4-desktop-first.jpg 1x, img/photo-4-desktop-retina.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet-retina.jpg 2x">
               <img class="catalog__list-item-image catalog__list-item-image--canyon" src="img/photo-4-desktop.jpg"
-                width="280" height="280" alt="Фрагмент дороги">
+                width="280" height="280" alt="Мост дьявола">
             </picture>
           </a>
           <div class="catalog__list-item-text">
@@ -125,8 +126,9 @@
     <section class="video">
       <div class="video__text">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__feature">Смотрите видеопрезентацию и скорее за билетами, пока они
-          не подорожали в очередной раз!</p>
+        <p class="video__feature">Смотрите видеопрезентацию и скорее за билетами,
+          пока
+          они подорожали в очередной раз!</p>
       </div>
       <div class="video__video">
         <picture>
@@ -135,6 +137,8 @@
           <img class="video__video-image" src="img/video-mobile.jpg" width="280" height="177"
             alt="Заставка видеоролика">
         </picture>
+        <button class="video__video__button" type="button"><span class="visually-hidden">play</span></button>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -164,7 +168,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>

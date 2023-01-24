@@ -52,8 +52,89 @@
 
 .features__description {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
   color: #333333;
   margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    word-spacing: 8px;
+  }
+}
+
+.features__item-icon-house {
+  position: absolute;
+  top: 35px;
+  left: 19px;
+  right: 110px;
+  width: 39px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 77px;
+    height: 72px;
+
+  }
+
+}
+
+.features__item-icon-souvenir {
+  position: absolute;
+  top: 35px;
+  left: 19px;
+  right: 110px;
+  width: 32px;
+  height: 38px;
+
+
+  @media (min-width: $tablet-width) {
+
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 66px;
+    height: 75px;
+
+  }
+}
+
+.features__item-icon-food {
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  right: 110px;
+  width: 40px;
+  height: 34px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 82px;
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 82px;
+    height: 68px;
+  }
 }
