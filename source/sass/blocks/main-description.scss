@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #FFFFFF;
+
 
   &::before {
     counter-increment: section;
@@ -55,6 +55,9 @@
 
 .main-description__item--blue {
   grid-column: 1 / -1;
+  background: #81b3d2;
+  color: #ffffff;
+
 }
 
 .main-description {

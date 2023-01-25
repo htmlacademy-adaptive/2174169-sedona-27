@@ -17,7 +17,7 @@
   z-index: -1;
   margin: 0 auto;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/tablet-desktop-back.jpg");
     grid-template-rows: 285px max-content;
     background-position-y: -51px;
@@ -28,8 +28,8 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/catalog-back-retina.jpg");
     background-size: 1200px auto;
+    grid-template-rows: 300px max-content;
   }
-
 }
 
 .photo-block__wrapper {
@@ -41,18 +41,15 @@
   grid-template-rows: 158px max-content;
   margin: 0;
 
-  @media (min-width:$tablet-width) {
-
+  @media (min-width: $tablet-width) {
     background-image: url("../img/intro-triangle-tablet.svg");
     grid-template-rows: 290px max-content;
   }
 
   @media (min-width: $desktop-width) {
-
     background-image: url("../img/intro-triangle-desktop.svg");
     grid-template-rows: 290px max-content;
   }
-
 }
 
 .photo-block__image {
@@ -60,12 +57,11 @@
   margin-top: 52px;
   display: block;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 101px;
     width: 459px;
     height: 79px;
   }
-
 }
 
 .photo-block__text {
@@ -75,17 +71,20 @@
   margin-top: auto;
   background-color: #ffffff;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 40px 155px 67px 155px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .photo-block__title {
   font-size: 18px;
   margin-bottom: 23px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     padding-top: 5px;
     padding-bottom: 9px;
@@ -99,15 +98,20 @@
 }
 
 .photo-block__feature {
-  font-family: 'ptsans', sans-serif;
+  font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  max-width: 445px;
+  margin-left: auto;
+  margin-right: auto;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
-
-
 }

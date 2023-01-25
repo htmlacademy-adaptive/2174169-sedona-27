@@ -31,22 +31,17 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-
     background-image: url("../img/intro-triangle-tablet.svg");
     display: grid;
     grid-template-rows: 389px max-content;
     background-size: 100%;
-
   }
 
   @media (min-width: $desktop-width) {
-
     background-image: url("../img/intro-triangle-desktop.svg");
     background-size: 100%;
-
   }
 }
-
 
 .description-catalog__image {
   margin: 0 auto;
@@ -54,22 +49,17 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-
     margin-top: 102px;
     width: 456px;
     height: 77px;
-
   }
 
   @media (min-width: $desktop-width) {
-
     margin-top: 96px;
-
   }
 }
 
 .description-catalog {
-
   @media (min-width: $tablet-width) {
     background-image: url("../img/back-tablet-form.jpg");
     grid-template-rows: 291px max-content;
@@ -133,16 +123,12 @@
   text-align: center;
   font-size: 18px;
 
-
   @media (min-width: $tablet-width) {
-
     font-size: 30px;
     margin-bottom: 23px;
   }
 
-
   @media (min-width: $desktop-width) {
-
-    margin-bottom: 33px;
+    margin-bottom: 29px;
   }
 }
