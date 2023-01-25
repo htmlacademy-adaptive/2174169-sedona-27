@@ -85,8 +85,7 @@ const createWebp = () => {
 
 const svg = () =>
   gulp
-  .src(["source/img/*.svg", "sourse/img/favicons/*.svg", "!source/img/icons/*.svg"])
-  .pipe(svgo())
+  .src(["source/img/*.svg", "sourse/img/favicons/*.svg"])
   .pipe(gulp.dest("build/img"));
 
 const sprite = () => {
@@ -150,7 +149,7 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(styles, html, scripts, svg, sprite, createWebp)
+  gulp.parallel(styles, html, scripts, svg, createWebp)
 );
 
 // Default
@@ -159,6 +158,6 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(styles, html, scripts, svg, sprite),
+  gulp.parallel(styles, html, scripts, svg, createWebp),
   gulp.series(server, watcher)
 );

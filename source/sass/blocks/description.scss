@@ -14,28 +14,20 @@
   text-transform: uppercase;
   margin: 0 auto;
 
-
-
-  @media (min-width:$tablet-width) {
-
+  @media (min-width: $tablet-width) {
     background-image: url("../img/tablet-index-back.jpg");
     grid-template-rows: 516px max-content;
     margin: auto;
     background-size: cover;
     background-position-x: 3px;
-
   }
 
   @media (min-width: $desktop-width) {
-
     background-image: url("../img/back-desktop.jpg");
     z-index: 1;
     grid-template-rows: 517px max-content;
-
   }
 }
-
-
 
 .description__wrapper {
   background-image: url("../img/intro-triangle.svg");
@@ -46,21 +38,17 @@
   grid-template-rows: 389px max-content;
   margin: 0;
 
-  @media (min-width:$tablet-width) {
-
+  @media (min-width: $tablet-width) {
     background-image: url("../img/intro-triangle-tablet.svg");
     grid-template-rows: 518px max-content;
     background-size: 100%;
-
   }
 
-  @media (min-width:$desktop-width) {
-
+  @media (min-width: $desktop-width) {
     background-image: url("../img/intro-triangle-desktop.svg");
     grid-template-rows: 518px max-content;
     background-size: 100%;
   }
-
 }
 
 .description__title {
@@ -69,26 +57,23 @@
   line-height: 26px;
   margin: 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
     word-spacing: 8px;
-
   }
-
 }
-
 
 .description__text {
   padding: 32px 18px 35px 16px;
   margin-top: auto;
   background-color: #ffffff;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 50px 123px 54px 127px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 59px 357px 44px 357px;
   }
 }
@@ -103,19 +88,14 @@
   margin-top: 90px;
   display: block;
 
-
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 77px;
     width: 461px;
     height: 349px;
   }
-
-
 }
 
 .description__text-text {
-
-
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -125,7 +105,10 @@
   padding-left: 8px;
 
   @media (min-width: $tablet-width) {
-
     padding: 27px 0 3px 3px;
+
+    br {
+      display: none;
+    }
   }
 }
