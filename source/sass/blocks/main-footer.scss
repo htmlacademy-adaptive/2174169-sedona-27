@@ -104,7 +104,7 @@
 
 .main-footer__social-link {
   background-color: #81b3d2;
-  background-size: 24px 14px;
+
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -126,13 +126,46 @@
 }
 
 .main-footer__social-link--vk {
-  background-image: url("../img/vkontakte.png");
+  background-image: url("../img/vk.svg");
 }
 
 .main-footer__social-link--tg {
-  background-image: url("../img/telegram.png");
+  background-image: url("../img/telegram.svg");
 }
 
 .main-footer__social-link--youtube {
-  background-image: url("../img/youtube.png");
+  background-image: url("../img/youtube.svg");
+}
+
+.main-footer__copyright-icon-academy {
+  margin: -27px 2px 18px 142px;
+
+
+  @media (min-width: $tablet-width) {
+
+    margin: -28px 0 18px 141px;
+  }
+}
+
+.main-footer__copyright-link {
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  height: 32px;
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+
+    &:active {
+      opacity: 0.3;
+      color: #000000;
+    }
+  }
+}
+
+.copyright__text {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
