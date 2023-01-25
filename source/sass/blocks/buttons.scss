@@ -1,0 +1,22 @@
+.button {
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: #669ec0;
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
