@@ -69,6 +69,7 @@
   justify-content: center;
   align-items: center;
 
+
   @media (min-width: $tablet-width) {
 
     margin-top: 32px;
@@ -101,5 +102,21 @@
     height: 500px;
 
   }
+
+}
+
+.video__video-button {
+  background-image: url("../img/button-play.svg");
+  display: block;
+  width: 48px;
+  height: 54px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }

@@ -19,8 +19,23 @@
   padding-right: 18px;
   padding-top: 23px;
   padding-bottom: 10px;
-}
+  position: relative;
 
+  @media (min-width:$tablet-width) {
+    padding-top: 60px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 60px;
+
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 69px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+  }
+}
 
 .features__title {
   font-family: "ptsans", sans-serif;
@@ -75,11 +90,8 @@
   height: 36px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    position: static;
+
     width: 77px;
     height: 72px;
 
@@ -98,11 +110,8 @@
 
   @media (min-width: $tablet-width) {
 
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    position: static;
+
     width: 66px;
     height: 75px;
 
@@ -118,23 +127,10 @@
   height: 34px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    position: static;
+
     width: 82px;
     height: 68px;
   }
 
-  @media (min-width: $desktop-width) {
-
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    width: 82px;
-    height: 68px;
-  }
 }
