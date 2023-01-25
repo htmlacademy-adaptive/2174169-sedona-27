@@ -148,6 +148,18 @@
 
 }
 
+.form__contacts {
+  @media (min-width:$tablet-width) {
+    padding-left: 44px;
+
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-left: 63px;
+  }
+}
+
+
 .form__emotions {
 
   @media (min-width:$tablet-width) {
