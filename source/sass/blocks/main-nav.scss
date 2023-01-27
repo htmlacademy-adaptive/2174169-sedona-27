@@ -5,10 +5,22 @@
 
 
   @media (min-width: $tablet-width) {
-
     width: 100%;
   }
 
+  @media (max-width: 767px) {
+    &--nojs {
+      .main-nav__list {
+        display: block;
+        position: static;
+        height: auto;
+      }
+
+      .main-nav__toggle {
+        display: none;
+      }
+    }
+  }
 }
 
 .main-nav__list {
