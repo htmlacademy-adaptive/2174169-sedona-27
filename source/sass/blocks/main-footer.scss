@@ -155,17 +155,11 @@
   color: #000000;
 
   &:hover {
-    color: #81b3d2;
+    color: #81B3D2;
 
     &:active {
       opacity: 0.3;
       color: #000000;
     }
   }
-}
-
-.copyright__text {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }

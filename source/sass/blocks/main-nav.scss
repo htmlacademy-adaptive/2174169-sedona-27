@@ -72,13 +72,17 @@
 
   @media (min-width: $tablet-width) {
 
-    width: 20%;
+    width: 153px;
     text-align: center;
     background-color: #ffffff;
-    box-shadow: none;
+
+    &:nth-child(2) {
+      margin-right: auto;
+    }
 
     &:nth-child(3) {
-      margin-left: auto;
+      margin-right: -25px;
+      width: 176px;
     }
   }
 
@@ -197,4 +201,20 @@
 
 .main-nav--nojs .main-nav__list-item-link {
   display: block;
+}
+
+
+
+
+.main-nav__list-item-link--academy {
+  @media (min-width: $tablet-width) {
+    padding: 18px 6px 16px 36px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 37px 16px 36px;
+
+  }
+
 }
