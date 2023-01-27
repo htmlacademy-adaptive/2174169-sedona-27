@@ -3,10 +3,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-
   background-color: #ffffff;
   list-style: none;
   padding: 0;
+  padding-bottom: 42px;
   width: 100%;
 
   @media (min-width:$tablet-width) {
@@ -20,8 +20,8 @@
 .features__item {
   padding-left: 65px;
   padding-right: 18px;
-  padding-top: 23px;
-  padding-bottom: 10px;
+  padding-top: 34px;
+  padding-bottom: 5px;
   position: relative;
 
   @media (min-width:$tablet-width) {
@@ -60,8 +60,6 @@
     margin-bottom: 24px;
     margin-top: 28px;
     margin-right: 9px;
-
-
   }
 }
 
@@ -120,8 +118,8 @@
 
 .features__item-icon-souvenir {
   position: absolute;
-  top: 35px;
-  left: 19px;
+  top: 25px;
+  left: 23px;
   right: 110px;
   width: 32px;
   height: 38px;
@@ -139,8 +137,8 @@
 
 .features__item-icon-food {
   position: absolute;
-  top: 40px;
-  left: 15px;
+  top: 26px;
+  left: 19px;
   right: 110px;
   width: 40px;
   height: 34px;
