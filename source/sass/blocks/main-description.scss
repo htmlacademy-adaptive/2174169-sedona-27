@@ -9,20 +9,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &::before {
-    counter-increment: section;
-    content: "— № "counter(section) " -";
-    padding-bottom: 19px;
-  }
-}
-
-.main-description__feature {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
   margin: 0;
+
+  &::before {
+    counter-increment: section;
+    content: "— № "counter(section) " -";
+
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 7px 0 0;
+    max-width: 190px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+
+  }
+
+
 }
 
 .main-description__feature--grey {
