@@ -1,11 +1,10 @@
 .catalog {
-  font-family: "ptsans", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  margin-right: 12px;
-  margin-left: 12px;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     margin-right: 60px;
@@ -20,12 +19,14 @@
 
 .catalog__list {
   margin: 0;
+  margin-bottom: 18px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,13 +40,33 @@
     grid-column: 1 / -1;
   }
 
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  padding: 0 20px;
+  padding-top: 26px;
+  border-top: 1px solid #e5e5e5;
+
   @media (min-width: $tablet-width) {
-    background-color: #eaeaea;
+    // background-color: #eaeaea;
+    padding: 0;
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: max-content max-content;
+
+    &:not(:first-of-type) {
+      .catalog__list-item-text {
+        padding: 20px 17px 17px 25px;
+      }
+    }
   }
 }
 
@@ -89,7 +110,7 @@
 }
 
 .catalog__list-item-text {
-  padding: 19px 0 44px 0;
+  padding: 12px 0 25px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -108,7 +129,7 @@
 }
 
 .catalog__list-item-button {
-  font-family: "ptsans", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -132,6 +153,8 @@
     align-self: center;
     background-color: #f2f2f2;
     padding-left: 30px;
+    padding-top: 0;
+    padding-right: 0;
     background-image: url("../img/like-icon.svg");
     background-repeat: no-repeat;
     background-position-y: center;
@@ -145,6 +168,7 @@
     background-color: rgba(28, 28, 28, 0);
     color: #ffffff;
     grid-row: 1/3;
+    padding-top: 5px;
     padding-left: 30px;
     background-image: url("../img/like-icon-desktop.svg");
     background-repeat: no-repeat;

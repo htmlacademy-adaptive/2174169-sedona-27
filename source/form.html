@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-1.png" type="image/png">
@@ -21,7 +23,7 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
       </a>
-      <nav class="main-nav main-nav--opened ">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -32,11 +34,12 @@
           <li class="main-nav__list-item ">
             <a class="main-nav__list-item-link " href="catalog.html">Фото и видео</a>
           </li>
-          <li class="main-nav__list-item main-nav__list-item-link--active">
-            <a class="main-nav__list-item-link main-nav__list-item-link--active" href="form.html">Форма отзыва</a>
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a class="main-nav__list-item-link main-nav__list-item-link--active main-nav__list-item-link-form"
+              href="form.html">Форма отзыва</a>
           </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-item-link" href="#">HTML Academy</a>
+          <li class="main-nav__list-item main-nav__list-item--academy">
+            <a class="main-nav__list-item-link main-nav__list-item-link--academy " href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -48,7 +51,9 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/text-sedona-desktop-catalog.svg">
           <source media="(min-width: 768px)" srcset="img/sedona-large.svg">
-          <img class="photo-block__image" src="img/mobile-sedona.svg" width="229" height="39" alt="Логотип города">
+          <img class="description-catalog__image" src="img/mobile-sedona.svg" width="229" height="39"
+            alt="Логотип города">
+
         </picture>
       </div>
       <div class="description-catalog__container">
@@ -160,7 +165,7 @@
     <div class="main-footer__wrapper">
       <b class="main-footer__link">#visitsedona</b>
       <div class="main-footer__social social">
-        <ul class="main-footer__social__list">
+        <ul class="main-footer__social-list">
           <li class="main-footer__social-item">
             <a class="main-footer__social-link main-footer__social-link--vk" href="https://vk.com/htmlacademy"><span
                 class="visually-hidden">Мы в Вконтакте</span></a>

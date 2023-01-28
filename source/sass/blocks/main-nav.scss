@@ -3,12 +3,24 @@
   z-index: 2;
   width: 100%;
 
-
   @media (min-width: $tablet-width) {
-
     width: 100%;
   }
 
+  @media (max-width: 767px) {
+    &--nojs {
+      .main-nav__list {
+        display: block;
+        position: static;
+        height: auto;
+        padding-top: 50px;
+      }
+
+      .main-nav__toggle {
+        display: none;
+      }
+    }
+  }
 }
 
 .main-nav__list {
@@ -16,21 +28,21 @@
   display: none;
   height: 56px;
 
-  &--active {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
+  @media (max-width: 767px) {
+    &--active {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+    }
   }
 
   @media (min-width: $tablet-width) {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
   }
 }
 
@@ -42,7 +54,6 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -52,13 +63,11 @@
   }
 }
 
-
 .main-nav__list-item-link--active {
   @media (min-width: $tablet-width) {
     color: #766357;
   }
 }
-
 
 .main-nav__list-item {
   background-color: #81b3d2;
@@ -68,14 +77,12 @@
   justify-content: center;
   width: 100%;
   min-height: 56px;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
-
     width: 20%;
     text-align: center;
     background-color: #ffffff;
-    box-shadow: none;
 
     &:nth-child(3) {
       margin-left: auto;
@@ -83,9 +90,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
     width: 240px;
-
   }
 }
 
@@ -97,11 +102,9 @@
   opacity: 0.7;
 }
 
-
-
 .main-nav__toggle {
   top: 0;
-  right: 0;
+  right: 7px;
   width: 60px;
   height: 55px;
   border: none;
@@ -125,13 +128,9 @@
   }
 
   @media (min-width: $tablet-width) {
-
     display: none;
-
   }
-
 }
-
 
 .main-nav--opened .main-nav__toggle::before {
   content: "";
@@ -197,4 +196,10 @@
 
 .main-nav--nojs .main-nav__list-item-link {
   display: block;
+}
+
+.main-nav__list-item-link--academy {
+  @media (min-width: $desktop-width) {
+    padding: 19px 37px 16px 36px;
+  }
 }

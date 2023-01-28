@@ -55,12 +55,13 @@
   text-align: center;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 256px;
 
   @media (min-width: $tablet-width) {
+    max-width: unset;
     font-size: 21px;
     line-height: 26px;
-    word-spacing: 8px;
   }
 }
 
@@ -105,7 +106,7 @@
   padding-left: 8px;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 0 3px 3px;
+    padding: 29px 0 2px 0px;
 
     br {
       display: none;
