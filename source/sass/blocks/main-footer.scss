@@ -99,8 +99,8 @@
 }
 
 .main-footer__social-link {
+  position: relative;
   background-color: #81b3d2;
-
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -114,6 +114,23 @@
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0);
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
@@ -122,15 +139,21 @@
 }
 
 .main-footer__social-link--vk {
-  background-image: url("../img/vk.svg");
+  &::before {
+    background-image: url("../img/vk.svg");
+  }
 }
 
 .main-footer__social-link--tg {
-  background-image: url("../img/telegram.svg");
+  &::before {
+    background-image: url("../img/telegram.svg");
+  }
 }
 
 .main-footer__social-link--youtube {
-  background-image: url("../img/youtube.svg");
+  &::before {
+    background-image: url("../img/youtube.svg");
+  }
 }
 
 .main-footer__copyright-link {

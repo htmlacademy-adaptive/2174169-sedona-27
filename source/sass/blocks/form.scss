@@ -129,12 +129,28 @@
   font-size: 18px;
   line-height: 26px;
   width: 100%;
+  height: 58px;
   border: none;
   background-color: #f2f2f2;
   padding-top: 16px;
   padding-left: 16px;
   padding-bottom: 16px;
   padding-right: 16px;
+  // border: 4px solid transparent;
+  box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus,
+  &:active,
+  &:focus-within {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
 }
 
 .form__input::placeholder {
@@ -274,15 +290,15 @@
 
 .form__input--phone {
   background: #f2f2f2;
-  border: none;
   padding: 16px 0 16px 16px;
   width: 100%;
+  height: 58px;
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
   background-image: url("../img/telephone.svg");
   background-repeat: no-repeat;
-  background-position: right 0;
+  background-position: right center;
   padding-right: 80px;
   padding-top: 17px;
 
@@ -402,6 +418,12 @@
     margin-bottom: 40px;
     height: 160px;
   }
+
+  &:focus-within {
+    background-color: #ffffff;
+    outline: 4px solid #d5d5d5;
+    outline-offset: -4px;
+  }
 }
 
 .form__label-textarea {
@@ -433,6 +455,19 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
   }
+
+  &:hover {
+    background-color: #669ec0;
+    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  &:disabled {
+    background-color: #5496bd;
+    mix-blend-mode: normal;
+    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
 }
 
 .form__subtext {
@@ -463,11 +498,45 @@
   cursor: pointer;
 }
 
-.form__input-checkbox:checked + .form__checkbox::before:hover {
-  opacity: 0.7;
+.form__input-radio[type="radio"],
+.form__input-checkbox {
+  &:focus-within {
+    & + .form__radio {
+      background-color: #d5d5d5;
+    }
+  }
 }
 
-.form__input-checkbox:checked + .form__checkbox::before:active {
+.form__input-checkbox {
+  &:focus-within {
+    & + .form__checkbox {
+      background-color: #d5d5d5;
+    }
+  }
+}
+
+.form__control:hover .form__checkbox {
+  background-color: #e5e5e5;
+}
+
+.form__control:active .form__checkbox {
+  background-color: #d5d5d5;
+}
+
+.form__control:active .form__checkbox::before,
+.form__control:active .form__checkbox::after {
+  opacity: 0.3;
+}
+
+.form__control:hover .form__radio {
+  background-color: #e5e5e5;
+}
+
+.form__control:active .form__radio {
+  background-color: #d5d5d5;
+}
+
+.form__control:active .form__radio::before {
   opacity: 0.3;
 }
 
@@ -508,6 +577,6 @@
   width: 15px;
   height: 3px;
   transform: rotate(45deg);
-  background-color: #333;
+  background-color: #333333;
   content: "";
 }

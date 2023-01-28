@@ -77,8 +77,7 @@
   justify-content: center;
   width: 100%;
   min-height: 56px;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
-    inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
     width: 20%;
@@ -105,7 +104,7 @@
 
 .main-nav__toggle {
   top: 0;
-  right: 0;
+  right: 7px;
   width: 60px;
   height: 55px;
   border: none;
@@ -115,7 +114,6 @@
   background-color: #ffffff;
   margin-left: auto;
   position: relative;
-  right: 7px;
 
   &:hover::before {
     background: #ffffff;
@@ -201,9 +199,6 @@
 }
 
 .main-nav__list-item-link--academy {
-  @media (min-width: $tablet-width) {
-  }
-
   @media (min-width: $desktop-width) {
     padding: 19px 37px 16px 36px;
   }

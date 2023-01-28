@@ -32,7 +32,6 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin: 0;
 
   &::before {
     counter-increment: section;
@@ -104,7 +103,6 @@
   @include list-reset;
   counter-reset: section;
   list-style: none;
-  counter-reset: section;
 
   @media (min-width: $tablet-width) {
     display: grid;
