@@ -14,12 +14,12 @@
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -28,11 +28,10 @@
 .main-footer__social {
   margin: auto;
 
-  @media (min-width:$tablet-width) {
-    padding: 36px 0;
+  @media (min-width: $tablet-width) {
+    padding: 36px 0 0 5px;
     margin: 0;
   }
-
 }
 
 .main-footer__social-list {
@@ -44,14 +43,12 @@
   justify-content: center;
   gap: 6px;
 
-  @media (min-width:$tablet-width) {
-
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
 
-
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -68,17 +65,17 @@
   font-size: 21px;
   line-height: 26px;
 
-
-  @media (min-width:$tablet-width) {
-    padding: 48px 39px 45px 25px;
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
   }
 
-  @media (min-width:$desktop-width) {
-    padding: 48px 97px 45px 72px;
+  @media (min-width: $desktop-width) {
+    padding: 51px 97px 45px 72px;
   }
 }
-
 
 .main-footer__copyright {
   display: flex;
@@ -89,17 +86,16 @@
   justify-content: center;
   width: 100%;
 
-  @media (min-width:$tablet-width) {
-    padding: 45px 8px 42px 29px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 20px;
+    padding-top: 15px;
     margin: 0;
   }
 
-
-  @media (min-width:$desktop-width) {
-    padding: 43px 0 42px 36px;
+  @media (min-width: $desktop-width) {
+    padding: 43px 0 42px;
   }
-
-
 }
 
 .main-footer__social-link {
@@ -137,26 +133,17 @@
   background-image: url("../img/youtube.svg");
 }
 
-.main-footer__copyright-icon-academy {
-  margin: -27px 2px 18px 142px;
-
-
-  @media (min-width: $tablet-width) {
-
-    margin: -28px 0 18px 141px;
-  }
-}
-
 .main-footer__copyright-link {
   text-decoration: none;
   display: flex;
+  align-items: center;
   gap: 10px;
   color: #000000;
   font-size: 14px;
   line-height: 21px;
 
   &:hover {
-    color: #81B3D2;
+    color: #81b3d2;
 
     &:active {
       opacity: 0.3;
