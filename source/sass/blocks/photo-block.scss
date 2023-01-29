@@ -17,18 +17,33 @@
   z-index: -1;
   margin: 0 auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile-form-retina.jpg");
+    background-size: 902px auto;
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/tablet-desktop-back.jpg");
-    grid-template-rows: 292px max-content;
-    background-position-y: -56px;
-    font-size: 30px;
+    background-image: url("../img/back-tablet-form.jpg");
+    grid-template-rows: 291px max-content;
+    background-position-y: -47px;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-back-form.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/catalog-back-retina.jpg");
-    background-size: 1200px auto;
-    grid-template-rows: 300px max-content;
+    background-image: url("../img/back-desktop-form.jpg");
+    background-size: 100%;
+    grid-template-rows: 299px max-content;
+    background-position-y: -56px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-form-retina.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
