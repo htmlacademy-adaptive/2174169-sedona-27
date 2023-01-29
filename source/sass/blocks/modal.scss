@@ -88,14 +88,14 @@
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #fff;
-  background-image: linear-gradient(to top, #f2f2f2 98px, #fff 0);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #f2f2f2 98px, #ffffff 0);
 
   @media (min-width: $tablet-width) {
     width: 400px;
     padding: 48px;
     margin: auto;
-    background-image: linear-gradient(to top, #f2f2f2 146px, #fff 0);
+    background-image: linear-gradient(to top, #f2f2f2 146px, #ffffff 0);
   }
 
   @media (min-width: $desktop-width) {
@@ -111,7 +111,7 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 35px;
-  background-color: #fff;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 400px;

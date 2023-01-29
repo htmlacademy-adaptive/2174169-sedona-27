@@ -101,7 +101,7 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp
-    .src(["source/fonts/*.{woff2,woff}"], {
+    .src(["source/fonts/*.{woff2,woff}", "source/manifest.webmanifest"], {
       base: "source",
     })
     .pipe(gulp.dest("build"));

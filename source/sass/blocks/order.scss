@@ -15,16 +15,10 @@
   }
 }
 
-.order__link.button {
-  display: block;
-  width: 284px;
-  padding: 16px 49px 16px 49px;
-}
-
 .order__text {
   padding: 23px 0 0;
   text-align: center;
-  color: #333;
+  color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -58,6 +52,10 @@
 }
 
 .order__link.button {
+  display: block;
+  width: 284px;
+  padding: 16px 49px 16px 49px;
+
   @media (min-width: $tablet-width) {
     width: 458px;
     padding: 14px 135px 17px 137px;
