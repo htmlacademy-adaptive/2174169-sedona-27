@@ -18,14 +18,24 @@
     background-image: url("../img/tablet-index-back.jpg");
     grid-template-rows: 516px max-content;
     margin: auto;
-    background-size: cover;
+    background-size: 100%;
     background-position-x: 3px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-index-back-retina.jpg");
+      background-size: 100% auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/back-desktop.jpg");
     z-index: 1;
     grid-template-rows: 517px max-content;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-retina.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -106,7 +116,7 @@
   padding-left: 8px;
 
   @media (min-width: $tablet-width) {
-    padding: 29px 0 2px 0px;
+    padding: 29px 0 2px 0;
 
     br {
       display: none;
